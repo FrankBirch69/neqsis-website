@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeQsis - Professional Trading Solutions | Coming Soon</title>
+    <meta name="description" content="NeQsis - Revolutionary trading technology launching soon. Professional order flow solutions for brokers.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .logo-section {
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00d4ff, #0099ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -2px;
+        }
+        
+        .tagline {
+            color: #8892a0;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .coming-soon {
+            margin: 3rem 0;
+        }
+        
+        .coming-soon h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .launch-text {
+            color: #00d4ff;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .description {
+            color: #8892a0;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 2rem 0;
+        }
+        
+        .contact {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2a3441;
+        }
+        
+        .contact p {
+            color: #8892a0;
+            margin-bottom: 1rem;
+        }
+        
+        .email {
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .email:hover {
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #1a2332;
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 3rem 0 1rem 0;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #0099ff);
+            width: 75%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .status {
+            color: #8892a0;
+            font-size: 0.9rem;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #00d4ff;
+            opacity: 0.3;
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            from {
+                transform: translateY(100vh) translateX(0);
+            }
+            to {
+                transform: translateY(-100px) translateX(100px);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            .coming-soon h1 {
+                font-size: 2rem;
+            }
+            .launch-text {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 6s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 10s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 12s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 14s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 16s;"></div>
+    </div>
+    
+    <div class="container">
+        <div class="logo-section">
+            <div class="logo">NeQsis</div>
+            <div class="tagline">Professional Trading Solutions</div>
+        </div>
+        
+        <div class="coming-soon">
+            <h1>Coming Soon</h1>
+            <p class="launch-text">Launching October 2025</p>
+            <p class="description">
+                Revolutionary order flow technology for professional traders and brokers. 
+                Advanced routing, intelligent allocation, and seamless integration.
+            </p>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <p class="status">Platform Development: 75% Complete</p>
+        
+        <div class="contact">
+            <p>For partnership inquiries:</p>
+            <a href="mailto:partners@neqsis.com" class="email">partners@neqsis.com</a>
+        </div>
+    </div>
+</body>
+</html>
